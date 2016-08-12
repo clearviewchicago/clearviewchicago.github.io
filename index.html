@@ -1,35 +1,36 @@
-<!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Radial Pop-Out Navigation</title>
-    
-    
-    
-    
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
-  </head>
-
-  <body>
-
-     <nav class="ss-icon closed" tabindex="0">
-  <span id="center-bar"></span>
-  <a href="#">Twitter</a>
-  <a href="#">Facebook</a>	
-  <a href="#">Pinterest</a>	
-  <a href="#">Google+</a>		
-  <a href="#">Ello</a>
-</nav>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-        <script src="js/index.js"></script>
-
-    
-    
-    
-  </body>
-</html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="homescreenjs.js"></script>
+	<link rel="stylesheet" href="homescreencss.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:900italic" rel="stylesheet" type="text/css">
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://cdn.rawgit.com/riccardoscalco/textures/master/textures.min.js"></script>
+	<title> CLEARVIEW</title>
+</head>
+<div><body onclick="openNav()";style="cursor:pointer; width:100%; height:100%;"></div>
+		<!--navbar-->
+	<div id="mySidenav" class="sidenav">
+		<a href="homescreen.html" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#"><a href="#" class="tablinks" onclick="openCity(event, '1')"><a href="index.html"><i class="glyphicon glyphicon-home w3-text-white"style="font-size:55px"></i></a></a>
+		<a href="#"><a href="#" class="tablinks" onclick="openCity(event, '2')"><a href="spaceexplore.html"><i class="glyphicon glyphicon-globe w3-text-white"style="font-size:55px"></i></a></a>
+		<a href="#"><a href="#" class="tablinks" onclick="openCity(event, '3')"><a href="spacecalendar.html"><i class="glyphicon glyphicon-calendar w3-text-white"style="font-size:55px"></i></a></a>
+		<a href="#"><a href="#" class="tablinks" onclick="openCity(event, '4')"><a href="spacemap.html"><i class="glyphicon glyphicon-map-marker w3-text-white"style="font-size:55px"></i></a></a>
+		<a href="#"><a href="#" class="tablinks" onclick="openCity(event, '5')"><a href="spacemine.html"><i class="glyphicon glyphicon-star w3-text-white"style="font-size:55px"></i></a></a>
+	</div>
+	<!-- Use any element to open the sidenav -->
+	<!--<div class="button"> <span onclick="openNav()">BEGIN</span> </div>-->
+	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<div id="main">
+	</div>
+<!--background-->
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<div id="title">
+</div>
+<div class="front"><h1>click anywhere to begin</h1></div>
+</body>
+</html>		
