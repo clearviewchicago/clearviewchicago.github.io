@@ -1,0 +1,368 @@
+<html class="no-js">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="spacemainjs.js"></script>
+	<script src="spaceexplorejs.js"></script>
+	
+	<link rel="stylesheet" href="spaceexplorecss.css">
+
+	<title>CLEARVIEW</title>
+</head>
+<body style="background-color:#000000">
+    <div class=topper> <h1>CLEARVIEW</h1>
+        <!--<div class="bar green"></div>-->
+    </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#"><a href="#" class="tablinks" onclick="openCity(event, '1')"><a href="homescreen.html"><i class="glyphicon glyphicon-home w3-text-white"style="font-size:55px"></i></a></a>
+  <a href="#"><a href="#" class="tablinks" onclick="openCity(event, '2')"><a href="spaceexplore.html"><i class="glyphicon glyphicon-globe w3-text-white"style="font-size:55px"></i></a></a>
+  <a href="#"><a href="#" class="tablinks" onclick="openCity(event, '3')"><a href="spacecalendar.html"><i class="glyphicon glyphicon-calendar w3-text-white"style="font-size:55px"></i></a></a>
+  <a href="#"><a href="#" class="tablinks" onclick="openCity(event, '4')"><a href="spacemap.html"><i class="glyphicon glyphicon-map-marker w3-text-white"style="font-size:55px"></i></a></a>
+  <a href="#"><a href="#" class="tablinks" onclick="openCity(event, '5')"><a href="spacemine.html"><i class="glyphicon glyphicon-star w3-text-white"style="font-size:55px"></i></a></a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"><i class="glyphicon glyphicon-menu-hamburger w3-text-white"style="font-size:64px"></i>EXPLORE</span> 
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+</div>
+<!--tiles
+<div class="container">
+<div class="history">History</div><div class="fun-facts">Fun Facts</div>
+<div class="articles">Articles</div>
+</div>-->
+<!--tiles2-->
+<div class="dashboard display-animation" style="margin: 0 auto; width: 1130px;">
+  <a class="tile tile-lg tile-pink ripple-effect" href="https://www.newscientist.com/subject/space/" target="_blank">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <div><p style="float: left;"><img src="article1.jpg" height="200px" width="200px" border="1px" class="right"></p>
+<h3>Inside NASA's towering rocket factory before deep space mission</h3>
+<h4> The ten levels of work platforms in the iconic Vehicle Assembly Building at Kennedy Space Centre in Florida are ready to house NASA's Exploration Mission 1.</h4>
+</div>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/google_spec.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"><span class="caption">LINK</span></span>
+		  
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+  <a class="tile tile-lg tile-sqr tile-purple ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>Did You Know?</h2>
+	  <h3>Uranus's blue glow is due to the methane in its atmosphere, which filters out all the red light.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/materialreel.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+  <a class="tile tile-lg tile-sqr tile-cyan ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>History</h2>
+	  <h3>The Space Shuttle Discovery deployed the Hubble Space Telescope in August 24, 1990</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/principles.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+  <a class="tile tile-lg tile-sqr tile-amber ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>History</h2>
+	  <h3>August 6,2012 - NASA's Curiosity rover successfully landed on Mars.  As large as a car, it carried an array of advanced new instruments and experiments.</h3>
+        <span class="tile-img tile-img-bg" style="background-image: url(http://www.google.com/design/images/doodlearchive.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+
+  <a class="tile tile-lg tile-light-blue ripple-effect" href="http://www.space.com/33671-perseids-get-a-boost-from-jupiter.html" "target=_blank">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+        <div><p style="float: left;"><img src="meteor.jpg" height="200px" width="200px" border="1px" class="right"></p>
+<h3>Jupiter's Effect Will Make Perseid Meteor Shower One to Remember</h3>
+<h4> The Perseids, the most widely observed and dependable of the annual meteor displays, will peak during the overnight hours of Thursday, Aug. 11 into the morning of Friday, Aug. 12, and this year has all the earmarks of being a spectacular show</h4>
+</div>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/google_spec.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"><span class="caption"></span></span>
+		  
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+
+   <a class="tile tile-lg tile-sqr tile-purple ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>Did You Know?</h2>
+	  <h3>In the northern skies, you are able to see two galaxies. These are the Andromeda Galaxy (M31), and the Triangulum Galaxy (M33).</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/materialreel.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+
+  <a class="tile tile-lg tile-sqr tile-purple ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>Did You Know?</h2>
+	  <h3>There are more volcanoes on Venus than any other planet within our solar system.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/materialreel.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+<a class="tile tile-lg tile-sqr tile-cyan ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>History</h2>
+	  <h3>November 26, 2011 - NASA launched Curiosity, the biggest, best equipped robot ever sent to explore another planet.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/principles.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+  <a class="tile tile-lg tile-light-green ripple-effect" href="http://phys.org/news/2016-08-veins-mars-evaporating-ancient-lakes.html">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+        <div><p style="float: left;"><img src="mars.png" height="200px" width="200px" border="1px" class="right"></p>
+<h3>Veins on Mars were formed by evaporating ancient lakes</h3>
+<h4> Mineral veins found in Mars's Gale Crater were formed by the evaporation of ancient Martian lakes, a new study has shown.</h4>
+</div>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/google_spec.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"><span class="caption"></span></span>
+		  
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+</div>
+<div class="dashboard display-animation" style="margin: 0 auto; width: 1130px; margin-top: -10px;">
+ 
+
+ <a class="tile tile-lg tile-pink ripple-effect" href="http://www.scientificamerican.com/article/can-time-travelers-reach-the-past-via-wormholes/">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+        <div><p style="float: left;"><img src="meteor.jpg" height="200px" width="200px" border="1px" class="right"></p>
+<h3>Can Time Travelers Reach the Past via Wormholes?</h3>
+<h4> Astronauts already skip ahead in time, but the laws of physics seem to forbid going backward—or do they?</h4>
+</div>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/google_spec.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"><span class="caption"></span></span>
+		  
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+ <a class="tile tile-lg tile-sqr tile-purple ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>Did You Know?</h2>
+	  <h3>There are three main types of galaxies out in space, and they are spiral, elliptical, and irregular.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/materialreel.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+
+
+
+
+
+
+
+  <a class="tile tile-lg tile-sqr tile-cyan ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>History</h2>
+	  <h3>In 1947, the first animals were launched into space. Fruit flies were used to study the effects of space travel on animals.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/principles.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+<a class="tile tile-lg tile-sqr tile-cyan ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>History</h2>
+	  <h3>Explorer 1, launched on Jan. 31, 1958, was the first artificial satellite sent into space by the United States. It orbited Earth every 115 minutes, and included a cosmic ray designed to measure the radiation environment in Earth's orbit.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/principles.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+  <a class="tile tile-lg tile-light-blue ripple-effect" href="http://www.livescience.com/55694-alien-megastructure-star-just-got-even-weirder.html">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+        <div><p style="float: left;"><img src="spacepic.jpg" height="200px" width="200px" border="1px" class="right"></p>
+<h3>Kepler's 'Alien Megastructure' Star Just Got Weirder</h3>
+<h4> Has Kepler revealed evidence for a technologically advanced civilization around a star only 1500 light-years away? That's one exciting, if unlikely, interpretation of recent transit data.</h4>
+</div>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/google_spec.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"><span class="caption"></span></span>
+		  
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+  <a class="tile tile-lg tile-sqr tile-purple ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>Did You Know?</h2>
+	  <h3>The Whirlpool Galaxy (M51) was the very first celestial object to be identified as being spiral.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/materialreel.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+
+  <a class="tile tile-lg tile-sqr tile-purple ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>Did You Know?</h2>
+	  <h3>When fully constructed, the Space Station will be visible for more than 90% of the Earth’s population.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/materialreel.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+
+<a class="tile tile-lg tile-sqr tile-cyan ripple-effect">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2>History</h2>
+	  <h3>On July 20, 1969, Astronaut Neil Armstrong took “a giant step for mankind” as he stepped onto the moon.</h3>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/principles.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"></span>
+    </span>
+    </span>
+    </span>
+  </a>
+
+
+
+
+  <a class="tile tile-lg tile-light-green ripple-effect" href="http://www.huffingtonpost.com/inverse/virtual-space-travel-is-a_b_11073782.html">
+    <span class="content-wrapper">
+      <span class="tile-content">
+	  <!--PUT STUFF IN TILE HERE-->
+	  <h2></h2>
+        <div><p style="float: left;"><img src="virtual.jpeg" height="200px" width="200px" border="1px" class="right"></p>
+<h3>Virtual Space Travel Is Almost Here</h3>
+<h4> Although the prospect of taking a vacay in space is thrilling, it’s also unrealistic — at least for the remainder of this century. Sure, there are reusable rockets and tourism-fitted spacecraft, but we’re still decades away from delighting in weightlessness.</h4>
+</div>
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/google_spec.png);"></span>
+    <span class="tile-holder tile-holder-sm">
+          <span class="title"><span class="caption"></span></span>
+		  
+    </span>
+    </span>
+    </span>
+  </a>
+</div>
+<!--background-->
+<div id="stars" class="front"></div>
+<div id="stars2" class="front"></div>
+<div id="stars3" class="front"></div>
+<div id="title" class="front">
+</div>
+</body>
+</html>
+
+		

@@ -1,0 +1,81 @@
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Complex icons</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      // The following example creates complex markers to indicate beaches near
+      // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
+      // to the base of the flagpole.
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: 39.8097, lng: -98.5556}
+        });
+        var markers = [];
+		var infowin = [];
+		var beaches = [
+        ["Big Bend National Park", 29.1275, -103.2425, "5"],
+        ['Cedar Breaks National Monument', 37.6354, -112.8453, "4" ],
+        ['Cherry Springs National Park', 41.6625, -77.8231, "3"],
+        ['Aoraki Mount Cook National Park', -43.5947, 170.2624, "7"],
+        ['The Headlands Dark Sky', 45.775470, -84.781172, "2"],
+		['Borrego Springs', 33.2559, -116.3750, "6"],
+		['Green River State Wildlife Area', 41.635052, -89.507287, "1"],
+		['Hamilton Country Conservation Area', 38.099491, -88.337545, "8"],
+		['Homer Glen', 41.6000, -87.9381],
+		['Black Canyon of the Gunnison National Park', 38.5754, -107.7416],
+		];
+	    var beaches2 = [ ["<b>Big Bend National Park</b> Big Bend National Park, TX"],
+        ['<p><b>Cedar Breaks National Monument</b> Cedar Breaks National Monument, 4730 South Hwy 148, Brianhead, UT<p>'],
+        ['<p><b>Cherry Springs National Park</b>4639 Cherry Springs Rd, Coudersport, PA 16915<p>'],
+        ['<p><b>Aoraki Mount Cook National Park</b>Canterbury 7999, New Zealand<p>'],
+        ['<p><b>The Headlands Dark Sky</b> 15675 Headlands Rd, Mackinaw City, MI 49701<p>'],
+		['<p><b>Borrego Springs</b> Borrego Springs, California 92004<p>'],
+		['<p><b>Green River State Wildlife Area</b> 375 Game Rd, Harmon, IL 61042</p>'],
+		['<p><b>Hamilton Country Conservation Area</b> Enfield, IL 62835</p>'],
+		['<p><b>Homer Glen</b> Home Glen, IL 60491</p>'],
+		['<p><b>Black Canyon of the Gunnison National Park</b> Gunnison National Park, CO 81230</p>'],
+		];
+        for (var i = 0; i < beaches.length; i++) {  
+			var contentString = '<div id="content'+i+'">'+
+				'<p>'+beaches2[i][0]+'</p>'+
+				'</div>';
+			var infowin = new google.maps.InfoWindow({
+				});
+			markers[i] = new google.maps.Marker({
+			position: {lat: beaches[i][1], lng: beaches[i][2]},
+			map: map,
+			info: contentString,
+			title: beaches[i][0]
+			});
+		
+			google.maps.event.addListener(markers[i],'click', function() {
+				infowin.setContent( this.info );
+				infowin.setPosition( this.position );
+				infowin.open(map, markers[i]);
+        });
+	  }
+	}
+ 
+	  
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHucf43QAFD3rj0bHAfVZq4jtZHlLl2UI&callback=initMap">
+    </script>
+  </body>
+</html>
